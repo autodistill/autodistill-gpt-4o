@@ -9,13 +9,13 @@
   </p>
 </div>
 
-# Autodistill GPT-4V Module
+# Autodistill GPTo Module
 
-This repository contains the code supporting the GPT-4V base model for use with [Autodistill](https://github.com/autodistill/autodistill).
+This repository contains the code supporting the GPTo base model for use with [Autodistill](https://github.com/autodistill/autodistill).
 
-[GPT-4V](https://openai.com/research/gpt-4v-system-card), developed by OpenAI, is a multi-modal language model. With GPT-4V, you can ask questions about images in natural language. The `autodistill-gpt4v` module enables you to classify images using GPT-4V.
+[GPTo](https://openai.com/index/hello-gpt-4o/, developed by OpenAI, is a multi-modal language model that works across the image, text, and audio domains. With GPTo, you can ask questions about images in natural language. The `autodistill-gpt4o` module enables you to classify images using GPT-4V.
 
-This model uses the [gpt-4-vision-preview API](https://openai.com/blog/new-models-and-developer-products-announced-at-devday) announced by OpenAI on November 6th, 2023.
+This model uses the [gpt-4-o API](https://platform.openai.com/docs/guides/vision) announced by OpenAI on May 13th, 2024.
 
 > [!NOTE]  
 > Using this project will incur billing charges for API calls to the OpenAI GPT-4 Vision API.
@@ -23,28 +23,26 @@ This model uses the [gpt-4-vision-preview API](https://openai.com/blog/new-model
 
 Read the full [Autodistill documentation](https://autodistill.github.io/autodistill/).
 
-Read the [GPT-4V Autodistill documentation](https://autodistill.github.io/autodistill/base_models/gpt_4v/).
-
 ## Installation
 
-To use GPT-4V with autodistill, you need to install the following dependency:
+To use GPT-4o with autodistill, you need to install the following dependency:
 
 
 ```bash
-pip3 install autodistill-gpt-4v
+pip3 install autodistill-gpt-4o
 ```
 
 ## Quickstart
 
 ```python
-from autodistill_gpt_4v import GPT4V
+from autodistill_gpt_4o import GPT4o
 
-# define an ontology to map class names to our GPT-4V prompt
+# define an ontology to map class names to our GPT-4o prompt
 # the ontology dictionary has the format {caption: class}
 # where caption is the prompt sent to the base model, and class is the label that will
 # be saved for that caption in the generated annotations
 # then, load the model
-base_model = GPT4V(
+base_model = GPT4o(
     ontology=CaptionOntology(
         {
             "person": "person",
