@@ -9,11 +9,11 @@
   </p>
 </div>
 
-# Autodistill GPTo Module
+# Autodistill GPT-4o Module
 
-This repository contains the code supporting the GPTo base model for use with [Autodistill](https://github.com/autodistill/autodistill).
+This repository contains the code supporting the GPT-4o base model for use with [Autodistill](https://github.com/autodistill/autodistill).
 
-[GPTo](https://openai.com/index/hello-gpt-4o/), developed by OpenAI, is a multi-modal language model that works across the image, text, and audio domains. With GPTo, you can ask questions about images in natural language. The `autodistill-gpt4o` module enables you to classify images using GPT-4V.
+[GPT-4o](https://openai.com/index/hello-gpt-4o/), developed by OpenAI, is a multi-modal language model that works across the image, text, and audio domains. With GPT-4o, you can ask questions about images in natural language. The `autodistill-gpt4o` module enables you to classify images using GPT-4V.
 
 This model uses the [gpt-4-o API](https://platform.openai.com/docs/guides/vision) announced by OpenAI on May 13th, 2024.
 
